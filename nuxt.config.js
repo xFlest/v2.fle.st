@@ -45,7 +45,20 @@ export default {
         jQuery: 'jquery',
         $: 'jquery'
       })
-    ]
+    ],
+    babel: {
+      presets({ isServer }) {
+        return [
+          [
+            require.resolve('@nuxt/babel-preset-app'),
+            {
+              buildTarget: isServer ? 'server' : 'client',
+              corejs: { version: 3 }
+            }
+          ]
+        ]
+      }
+    }
   },
 
   srcDir: 'src/',
