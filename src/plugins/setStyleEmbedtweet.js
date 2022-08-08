@@ -1,4 +1,4 @@
-import $ from 'jQuery'
+import $ from '~/static/jquery.min.js'
 export default ({ app }) => {
   app.router.afterEach((to, from) => {
     function changeTwitterWidgetDesign() {
