@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 export default {
   ssr: false,
 
@@ -37,7 +39,14 @@ export default {
 
   content: {},
 
-  build: {},
+  build: {
+    pulgins: [
+      new webpack.ProvidePlugin({
+        jQuery: 'jquery',
+        $: 'jquery'
+      })
+    ]
+  },
 
   srcDir: 'src/',
 
