@@ -4,7 +4,6 @@
       <Nav />
       <div class="card-scroller">
         <div class="tweet-container">
-          <Timeline id="xflest" sourceType="profile" />
         </div>
       </div>
     </div>
@@ -14,7 +13,6 @@
 <script>
 import Vue from 'vue'
 import $ from 'jQuery'
-import { Timeline } from 'vue-tweet-embed'
 import Nav from '~/components/common/nav.vue'
 
 Vue.use(Timeline)
