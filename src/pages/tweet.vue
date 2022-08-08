@@ -1,0 +1,61 @@
+<template>
+  <div class="card">
+    <div class="card-inner">
+      <Nav />
+      <div class="card-scroller">
+        <div class="tweet-container">
+          <Timeline id="xflest" sourceType="profile" :options="{ thene: 'dark' }" />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import Vue from 'vue'
+import $ from 'jQuery'
+import { Timeline } from 'vue-tweet-embed'
+import Nav from '~/components/common/nav.vue'
+
+Vue.use(Timeline)
+
+export default {
+  name: "Tweet",
+  components: {
+    Timeline,
+    Nav,
+  },
+  mounted () {
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+.card {
+  height: 92% !important;
+  transform: none !important;
+  &:is(.page-leave-to, .page-enter) {
+    transition: .3s;
+   .card-scroller {
+      opacity: 0;
+    }
+  }
+  &-inner {
+    padding: 0 4%;
+    height: 100%;
+  }
+  &-scroller {
+    transition: opacity .3s;
+    height: calc(100% - min(62px, 7vmin));
+    overflow-y: scroll;
+    scrollbar-width: 0;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+.tweet-container {
+  opacity: 0;
+  transition: opacity .4s;
+}
+</style>
