@@ -13,9 +13,9 @@
 
 <script>
 import Vue from 'vue'
-import $ from 'jQuery'
 import { Timeline } from 'vue-tweet-embed'
 import Nav from '~/components/nav.vue'
+import SetStyleEmbedTweet from '~/assets/js/tweetEmbed.js'
 
 Vue.use(Timeline)
 
@@ -26,7 +26,7 @@ export default {
     Nav,
   },
   mounted () {
-    setStyleEmbedTweet();
+    SetStyleEmbedTweet();
   },
 }
 </script>
