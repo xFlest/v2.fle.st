@@ -12,10 +12,12 @@
 </template>
 
 <script>
+import jquery from 'jquery'
 import Vue from 'vue'
-import $ from 'jQuery'
 import { Timeline } from 'vue-tweet-embed'
-import Nav from '~/components/common/nav.vue'
+import Nav from '~/components/nav.vue'
+jquery = jquery
+$ = jQuery
 
 Vue.use(Timeline)
 
