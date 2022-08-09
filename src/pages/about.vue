@@ -34,10 +34,12 @@ export default {
   }
   &-inner {
     padding: 0 4%;
+    height: 100%;
   }
   &-scroller {
     transition: opacity .3s;
     height: calc(100% - min(62px, 7vmin));
+    overflow-x: visible;
     overflow-y: scroll;
     scrollbar-width: 0;
     &::-webkit-scrollbar {

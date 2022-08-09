@@ -12,7 +12,7 @@
 
 <style lang="scss">
 html {
-  font-family: 'Zen Kaku Gothic New', serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 .card-container {
   display: flex;
