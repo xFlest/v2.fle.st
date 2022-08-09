@@ -36,12 +36,12 @@ export default ({ app }) => {
           text-align: center;
           color: #fff;
           font-size: calc(var(--r)*1.2) !important;
-          top: calc(var(--r)*-3);
+          top: calc(var(--r)*-4);
         }
         .timeline-Tweet {
           -webkit-tap-highlight-color:#0000;
           padding: 0 0 0 calc(var(--r)*4.8) !important;
-          margin: 0 0 calc(var(--r)*5);
+          margin: 0 0 calc(var(--r)*7);
           background-color: #0000 !important;
           position: relative;
         }
@@ -142,8 +142,7 @@ export default ({ app }) => {
         .timeline-Tweet-metadata,
         .timeline-LoadMore-endOfTimelineMessage,
         .timeline-Footer,
-        .PollXChoice-optionContainer,
-        .PollXChoice-info > :not(.PollXChoice-vote) {
+        .PollXChoice {
           display: none !important; 
         }
         </style>

@@ -29,7 +29,7 @@ html {
     width: min(88vw, var(--vh,100vh));
     position: relative;
     border-radius: calc(var(--vmin,100vmin)*0.04);
-    background-color: #37373740;
+    background-color: #17171740;
     backdrop-filter: blur(8vmin);
     -webkit-backdrop-filter: blur(8vmin);
     box-shadow: 0 0 10px #00000066;

@@ -21,6 +21,21 @@ export default {
     CardLink,
   },
   layout: "default",
+  mounted () {
+    const mobile = navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/i);
+    if (!mobile) {
+      document.body.addEventListener('mousemove', function(e){
+        const vh = window.innerHeight;
+        const vw = window.innerWidth;
+        const cursorX = e.clientX;
+        const cursorY = e.clientY;
+        const degreeX = (cursorY - (vh / 2)) / (vh / 2) * -20;
+        const degreeY = (cursorX - (vw / 2)) / (vw / 2) * 20;
+        const root = document.querySelector(':root');
+        root.style.setProperty('--cardRotate', `rotateX(${degreeX}deg) rotateY(${degreeY}deg)`);
+      });
+    }
+  } 
 }
 </script>
 

@@ -22,6 +22,7 @@ export default {
   plugins: [
     { src: '~/plugins/twemoji.js', ssr: false },
     { src: '~/plugins/setStyleEmbedtweet.js', ssr: false },
+    { src: '~/plugins/setWindowHeight.js', ssr: false },
   ],
 
   components: true,

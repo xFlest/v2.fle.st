@@ -19,7 +19,7 @@ import Nav from '~/components/nav.vue'
 Vue.use(Timeline)
 
 export default {
-  name: "TweetPage",
+  name: "Tweet",
   components: {
     Timeline,
     Nav,
