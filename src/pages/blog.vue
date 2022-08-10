@@ -1,14 +1,11 @@
-<template>
-  <div class="card">
-    <div class="card-inner">
-      <Nav />
-      <div class="card-scroller">
-        <NuxtLink to="/">😂🤣😁💕</NuxtLink>
-        <p v-emoji>😂🤣😁💕</p>
-        <p v-emoji>👌</p>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+.card
+  .card-inner
+    Nav
+    .card-scroller
+      NuxtLink(to="/") 😂🤣😁💕
+      p(v-emoji) 😂🤣😁💕
+      p(v-emoji) 👌
 </template>
 
 <script>

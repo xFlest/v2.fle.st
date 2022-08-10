@@ -1,35 +1,23 @@
-<template>
-  <div class="profile">
-    <div class="profile-image"><img src="~/assets/avatar2.jpg" alt="avatar_flest"></div>
-    <div class="profile-info">
-      <div class="profile-text">
-        <p class="profile-text-name">ふれすと</p>
-        <p class="profile-text-screenname"><span>/</span> xFlest</p>
-      </div>
-      <div class="profile-link">
-        <a class="profile-link-twitter" href="https://twitter.com/xflest">
-          <div>
-            <fa :icon="['fab', 'twitter']" />
-          </div>
-        </a>
-        <a class="profile-link-discord" href="https://discord.com/users/559273656342151179">
-          <div>
-            <fa :icon="['fab', 'discord']" />
-          </div>
-        </a>
-        <a class="profile-link-github" href="https://github.com/xFlest">
-          <div>
-            <fa :icon="['fab', 'github']" />
-          </div>
-        </a>
-        <a class="profile-link-misskey" href="https://submarin.online/@f">
-          <div>
-            <img src="../../assets/misskey.png" alt="misskey">
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+.profile
+  .profile-image: img(src="~/assets/avatar2.jpg" alt="avatar_flest")
+  .profile-info
+    .profile-text
+      p.profile-text-name ふれすと
+      p.profile-text-screenname #[span /] xFlest
+    .profile-link
+      a.profile-link-twitter(href="https://twitter.com/xflest")
+        div 
+          fa(:icon="['fab', 'twitter']")
+      a.profile-link-discord(href="https://discord.com/users/559273656342151179")
+        div
+          fa(:icon="['fab', 'discord']")
+      a.profile-link-github(href="https://github.com/xFlest")
+        div
+          fa(:icon="['fab', 'github']")
+      a.profile-link-misskey(href="https://submarin.online/@f")
+        div
+          img(src="../../assets/misskey.png" alt="misskey")
 </template>
 
 <style lang="scss" scoped>

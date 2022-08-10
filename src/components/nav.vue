@@ -1,15 +1,13 @@
-<template>
-  <nav class="nav">
-    <div class="nav-image"><img src="~/assets/logo.png" alt="logo"></div>
-    <ul class="nav-link">
-      <li class="nav-link-item nav-link-index"><NuxtLink to="/"><fa :icon="['fas', 'house']" /></NuxtLink></li>
-      <li class="nav-link-item"><NuxtLink to="/about"><fa :icon="['fas', 'circle-user']" /></NuxtLink></li>
-      <li class="nav-link-item"><NuxtLink to="/works"><fa :icon="['fas', 'award']" /></NuxtLink></li>
-      <li class="nav-link-item"><NuxtLink to="/blog"><fa :icon="['fas', 'newspaper']" /></NuxtLink></li>
-      <li class="nav-link-item"><NuxtLink to="/illust"><fa :icon="['fas', 'images']" /></NuxtLink></li>
-      <li class="nav-link-item"><NuxtLink to="/tweet"><fa :icon="['fab', 'twitter']" /></NuxtLink></li>
-    </ul>
-  </nav>
+<template lang="pug">
+nav.nav
+  .nav-image: img(src="~/assets/logo.png" alt="logo")
+  ul.nav-link
+    li.nav-link-item: NuxtLink(to="/"):  fa(:icon="['fas', 'house']")
+    li.nav-link-item: NuxtLink(to="/about"): fa(:icon="['fas', 'circle-user']")
+    li.nav-link-item: NuxtLink(to="/works"): fa(:icon="['fas', 'award']")
+    li.nav-link-item: NuxtLink(to="/blog"): fa(:icon="['fas', 'newspaper']")
+    li.nav-link-item: NuxtLink(to="/illust"): fa(:icon="['fas', 'images']")
+    li.nav-link-item: NuxtLink(to="/tweet"): fa(:icon="['fab', 'twitter']")
 </template>
 
 <style lang="scss" scoped>

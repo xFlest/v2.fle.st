@@ -1,13 +1,11 @@
-<template>
-  <div>
-    <div class="background">
-      <div class="background-fluid background-fluid-1"></div>
-      <div class="background-fluid background-fluid-2"></div>
-    </div>
-    <div class="card-container">
-      <Nuxt />
-    </div>
-  </div>
+<template lang="pug">
+div
+  .background
+    .background-fluid.background-fluid-1
+    .background-fluid.background-fluid-2
+    NuxtLink(to="/")
+  .card-container
+    Nuxt
 </template>
 
 <style lang="scss">
@@ -25,8 +23,8 @@ html {
   pointer-events: none;
   perspective: 1000px;
   > .card {
-    height: calc(min(88vw, var(--vh,100vh))*0.5625);
-    width: min(88vw, var(--vh,100vh));
+    height: calc(min(80vw, var(--vh,100vh))*0.5625);
+    width: min(80vw, var(--vh,100vh));
     position: relative;
     border-radius: calc(var(--vmin,100vmin)*0.04);
     background-color: #17171740;
@@ -64,6 +62,13 @@ html {
       transform: rotate(135deg) scale(180%);
       animation-delay: -2s;
     }
+  }
+  > a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 @keyframes fluid {  

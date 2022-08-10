@@ -1,14 +1,10 @@
-<template>
-  <div class="card">
-    <div class="card-inner">
-      <Nav />
-      <div class="card-scroller">
-        <div class="tweet-container">
-          <Timeline id="xflest" sourceType="profile" />
-        </div>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+.card
+  .card-inner
+    Nav
+    .card-scroller
+      .tweet-container
+        Timeline(id="xflest" sourceType="profile")
 </template>
 
 <script>

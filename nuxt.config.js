@@ -16,7 +16,8 @@ export default {
   },
 
   css: [
-    'normalize.css'
+    'normalize.css',
+    '~/assets/css/twemoji.css'
   ],
 
   plugins: [

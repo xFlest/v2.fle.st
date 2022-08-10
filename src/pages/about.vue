@@ -1,23 +1,30 @@
-<template>
-  <div class="card">
-    <div class="card-inner">
-      <Nav />
-      <div class="card-scroller">
-        <Profile />
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+.card
+  .card-inner
+    Nav
+    .card-scroller
+      Profile
+      .profile-more-container 
+        ProfileMore
+        ProfileLike
+        ProfileSkill
 </template>
 
 <script>
-import Nav from '~/components/nav.vue';
+import ProfileLike from '../components/about/profile-like.vue';
+import ProfileSkill from '../components/about/profile-skill.vue';
 import Profile from '~/components/about/profile.vue';
+import ProfileMore from '~/components/about/profile-more.vue';
+import Nav from '~/components/nav.vue';
 export default {
   name: "About",
   components: {
     Nav,
-    Profile
-  },
+    Profile,
+    ProfileMore,
+    ProfileLike,
+    ProfileSkill
+},
   layout: 'default',
 }
 </script>

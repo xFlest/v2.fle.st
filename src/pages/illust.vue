@@ -1,11 +1,8 @@
-<template>
-  <div class="card">
-    <div class="card-inner">
-      <Nav />
-      <div class="card-scroller">
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+.card
+  .card-inner
+    Nav
+    .card-scroller
 </template>
 
 <script>
