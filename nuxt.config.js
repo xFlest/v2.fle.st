@@ -60,7 +60,8 @@ export default {
           "faCircleUser",
           "faAward",
           "faNewspaper",
-          "faImages"
+          "faImages",
+          "faEarthAmericas"
         ],
       },
       {
@@ -68,7 +69,13 @@ export default {
         icons: [
           "faTwitter",
           "faDiscord",
-          "faGithub"
+          "faGithub",
+          "faInstagram",
+          "faLine",
+          "faYoutube",
+          "faTiktok",
+          "faFacebookF",
+          "faTumblr",
         ],
       },
     ],

@@ -14,7 +14,7 @@
 .profile-more {
   margin-top: min(45px, 12vmin);
   width: calc(100% / 3);
-  @media (max-aspect-ratio: 1/1) {
+  @media (max-aspect-ratio: 9/8) {
     flex-wrap: nowrap;
     width: 100%;
     &-container {
