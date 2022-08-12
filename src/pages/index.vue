@@ -2,7 +2,7 @@
 .card
   .card-inner
     .prf-avatar
-      img(class="prf-avatar-image" src="~/assets/avatar1.jpg")
+      img(class="prf-avatar-image" src="/avatar1.jpg")
     .prf-text
       p.prf-text-name ふれすと
       p.prf-text-screenname xFlest
