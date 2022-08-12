@@ -26,17 +26,5 @@ export default {
       opacity: 0;
     }
   }
-  &-inner {
-    padding: 0 4%;
-  }
-  &-scroller {
-    transition: opacity .3s;
-    height: calc(100% - min(62px, 7vmin));
-    overflow-y: scroll;
-    scrollbar-width: 0;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
 }
 </style>

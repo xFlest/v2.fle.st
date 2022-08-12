@@ -22,7 +22,7 @@ html {
   position: absolute;
   pointer-events: none;
   perspective: 1000px;
-  > .card {
+   .card {
     height: calc(min(80vw, var(--vh,100vh))*0.5625);
     width: min(80vw, var(--vh,100vh));
     position: relative;
@@ -32,6 +32,19 @@ html {
     -webkit-backdrop-filter: blur(8vmin);
     box-shadow: 0 0 10px #00000066;
     pointer-events: auto;
+    &-inner {
+      padding: 0 4%;
+      height: 100%;
+    }
+    &-scroller {
+      transition: opacity .3s;
+      height: calc(100% - min(50px, 5vmin) - min(12px, 2vmin) - min(4px, .7vmin) - min(3px, .5vmin));
+      overflow-y: scroll;
+      scrollbar-width: 0;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 }
 .background {

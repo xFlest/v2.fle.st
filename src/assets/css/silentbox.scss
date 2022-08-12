@@ -25,11 +25,28 @@
   &__arrow-buttons {
     > .arrow {
       &-previous {
-        left: calc((min(80vw, var(--vh,100vh)) - 90vw) / 2) !important;
+        right: calc((min(80vw, var(--vh,100vh)) - 90vw) / 2) !important;
+        left: auto !important;
+        transform: rotate(135deg) !important;
       }
       &-next {
-        right: calc((min(80vw, var(--vh,100vh)) - 90vw) / 2) !important;
+        left: calc((min(80vw, var(--vh,100vh)) - 90vw) / 2) !important;
+        right: auto !important;
+        transform: rotate(315deg) !important;
       }
+    }
+  }
+}
+#silentbox-gallery {
+  display: flex !important;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  gap: min(1rem,4vmin);
+  > a {
+    flex-basis: min(240px, 16vh);
+    flex-grow: 1;
+    > img {
+      width: 100%
     }
   }
 }

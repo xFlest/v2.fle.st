@@ -23,14 +23,44 @@ export default {
     return {
       illust: [
         {
-          src: 'avatar1.jpg',
-          description: 'illustration by 4y4san',
-          thumbnailWidth: '220px'
+          src: 'avatar/avatar9.jpg',
+          description: 'illustration by 翠羽',
         },
         {
-          src: '/avatar2.jpg',
+          src: 'avatar/avatar8.jpg',
+          description: 'illustration by ばーじぇす',
+        },
+        {
+          src: 'avatar/avatar7.jpg',
+          description: 'illustration by ふかまる',
+        },
+        {
+          src: 'avatar/avatar6.jpg',
+          description: 'illustration by さかなのおにぎり',
+        },
+        {
+          src: 'avatar/avatar5.jpg',
+          description: 'illustration by Matechan',
+        },
+        {
+          src: 'avatar/avatar4_c.jpg',
+          description: 'illustration by おちや',
+        },
+        {
+          src: 'avatar/avatar4.jpg',
+          description: 'illustration by おちや',
+        },
+        {
+          src: 'avatar/avatar3.jpg',
+          description: 'illustration by 酒樽',
+        },
+        {
+          src: 'avatar/avatar2.jpg',
           description: 'illustration by 4y4san',
-          thumbnailWidth: '220px'
+        },
+        {
+          src: 'avatar/avatar1.jpg',
+          description: 'illustration by 4y4san',
         }
       ]
     }
@@ -46,18 +76,6 @@ export default {
     transition: .3s;
    .card-scroller {
       opacity: 0;
-    }
-  }
-  &-inner {
-    padding: 0 4%;
-  }
-  &-scroller {
-    transition: opacity .3s;
-    height: calc(100% - min(62px, 7vmin));
-    overflow-y: scroll;
-    scrollbar-width: 0;
-    &::-webkit-scrollbar {
-      display: none;
     }
   }
 }
