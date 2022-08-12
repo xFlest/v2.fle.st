@@ -23,12 +23,12 @@ export default {
     return {
       illust: [
         {
-          src: '/_nuxt/src/assets/avatar1.jpg',
+          src: '~/assets/avatar1.jpg',
           description: 'illustration by 4y4san',
           thumbnailWidth: '220px'
         },
         {
-          src: '/_nuxt/src/assets/avatar2.jpg',
+          src: '^/assets/avatar2.jpg',
           description: 'illustration by 4y4san',
           thumbnailWidth: '220px'
         }
