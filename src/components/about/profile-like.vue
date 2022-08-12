@@ -10,8 +10,6 @@
       ul
         li 酪王カフェオレ
         li ココア
-    li.profile-more-list-item(v-emoji) 文房具🤏
-    li.profile-more-list-item(v-emoji) スマホ🤏
     li.profile-more-list-item 音楽
       ul
         li YOASOBI #[p.profile-more-list-etc などなど...]
@@ -20,6 +18,8 @@
         li 名探偵コナン
         li ゆるゆり #[p.profile-more-list-etc などなど...]
     li.profile-more-list-item(v-emoji) 東方Project🤏
+    li.profile-more-list-item(v-emoji) 文房具🤏
+    li.profile-more-list-item(v-emoji) スマホ🤏
 
 </template>
 

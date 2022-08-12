@@ -1,6 +1,8 @@
 <template lang="pug">
 nav.nav
-  .nav-image: img(src="~/assets/logo.png" alt="logo")
+  .nav-title
+    .nav-image: img(src="~/assets/logo.png" alt="logo")
+    p {{ $route.name }}
   ul.nav-link
     li.nav-link-item: NuxtLink(to="/"):  fa(:icon="['fas', 'house']")
     li.nav-link-item: NuxtLink(to="/about"): fa(:icon="['fas', 'circle-user']")

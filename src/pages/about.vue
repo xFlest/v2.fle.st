@@ -9,12 +9,14 @@
         ProfileLike
         ProfileSkill
       AllLink
+      LinkButton
 </template>
 
 <script>
 import ProfileLike from '../components/about/profile-like.vue';
 import ProfileSkill from '../components/about/profile-skill.vue';
 import AllLink from '../components/about/all-link.vue';
+import LinkButton from '../components/about/link-button.vue';
 import Profile from '~/components/about/profile.vue';
 import ProfileMore from '~/components/about/profile-more.vue';
 import Nav from '~/components/nav.vue';
@@ -26,7 +28,8 @@ export default {
     ProfileMore,
     ProfileLike,
     ProfileSkill,
-    AllLink
+    AllLink,
+    LinkButton
 },
   layout: 'default',
 }

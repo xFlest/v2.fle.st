@@ -3,16 +3,38 @@
   .card-inner
     Nav
     .card-scroller
+      silent-box(:gallery='illust')
 </template>
 
 <script>
-import Nav from '~/components/nav.vue';
+import Vue from 'vue'
+import VueSilentbox from 'vue-silentbox'
+import Nav from '~/components/nav.vue'
+Vue.use(VueSilentbox)
+
 export default {
   name: "Illust",
   components: {
-    Nav
+    Nav,
+    VueSilentbox
   },
   layout: 'default',
+  data() {
+    return {
+      illust: [
+        {
+          src: '/_nuxt/src/assets/avatar1.jpg',
+          description: 'illustration by 4y4san',
+          thumbnailWidth: '220px'
+        },
+        {
+          src: '/_nuxt/src/assets/avatar2.jpg',
+          description: 'illustration by 4y4san',
+          thumbnailWidth: '220px'
+        }
+      ]
+    }
+  }
 }
 </script>
 

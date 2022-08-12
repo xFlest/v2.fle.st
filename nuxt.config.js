@@ -17,13 +17,14 @@ export default {
 
   css: [
     'normalize.css',
-    '~/assets/css/twemoji.css'
+    '~/assets/css/twemoji.css',
+    '~/assets/css/silentbox.css'
   ],
 
   plugins: [
     { src: '~/plugins/twemoji.js', ssr: false },
     { src: '~/plugins/setStyleEmbedtweet.js', ssr: false },
-    { src: '~/plugins/setWindowHeight.js', ssr: false },
+    { src: '~/plugins/setWindowHeight.js', ssr: false }
   ],
 
   components: true,
@@ -61,7 +62,9 @@ export default {
           "faAward",
           "faNewspaper",
           "faImages",
-          "faEarthAmericas"
+          "faEarthAmericas",
+          "faAngleRight",
+          "faSackDollar"
         ],
       },
       {
