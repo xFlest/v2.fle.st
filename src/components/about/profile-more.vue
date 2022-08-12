@@ -87,7 +87,7 @@
         position: absolute;
         left: min(.3rem, .9vmin);
         display: block;
-        background-image: url(~/assets/ribbon.png);
+        background-image: url(/ribbon.png);
         background-size: contain;
         background-repeat: no-repeat;
         height: min(2rem, 6vmin);
