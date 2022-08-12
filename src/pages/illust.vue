@@ -23,12 +23,12 @@ export default {
     return {
       illust: [
         {
-          src: '~/assets/avatar1.jpg',
+          src: 'https://raw.githubusercontent.com/xFlest/dev.fle.st/main/src/assets/avatar1.jpg?token=GHSAT0AAAAAABXBHKL5NT6W2HSZRY7LP6ISYXWDXUQ',
           description: 'illustration by 4y4san',
           thumbnailWidth: '220px'
         },
         {
-          src: '^/assets/avatar2.jpg',
+          src: 'https://raw.githubusercontent.com/xFlest/dev.fle.st/main/src/assets/avatar2.jpg?token=GHSAT0AAAAAABXBHKL5PMRZCC5JBK2VPAUSYXWDZWA',
           description: 'illustration by 4y4san',
           thumbnailWidth: '220px'
         }
