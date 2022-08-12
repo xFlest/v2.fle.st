@@ -18,7 +18,7 @@ export default {
   css: [
     'normalize.css',
     '~/assets/css/twemoji.css',
-    '~/assets/css/silentbox.scss'
+    '~/assets/css/silentbox.css'
   ],
 
   plugins: [
