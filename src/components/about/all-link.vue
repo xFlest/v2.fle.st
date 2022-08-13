@@ -1,5 +1,5 @@
 <template lang="pug">
-.profile-link
+.profile-link-container
   .profile-more-title
     h2.profile-more-title-text #[p リ] #[p ン] #[p ク]
   ul.profile-link-list
@@ -53,7 +53,9 @@
 
 <style lang="scss">
 .profile-link {
-  margin: min(90px, 24vmin) 0;
+  &-container {
+    margin: min(90px, 24vmin) 0;
+  }
   &-list {
     display: flex;
     flex-wrap: wrap;

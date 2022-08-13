@@ -8,7 +8,7 @@ nav.nav
     li.nav-link-item: NuxtLink(to="/about"): fa(:icon="['fas', 'circle-user']")
     li.nav-link-item: NuxtLink(to="/works"): fa(:icon="['fas', 'award']")
     li.nav-link-item: NuxtLink(to="/blog"): fa(:icon="['fas', 'newspaper']")
-    li.nav-link-item: NuxtLink(to="/illust"): fa(:icon="['fas', 'images']")
+    li.nav-link-item: NuxtLink(to="/gallery"): fa(:icon="['fas', 'images']")
     li.nav-link-item: NuxtLink(to="/tweet"): fa(:icon="['fab', 'twitter']")
 </template>
 

@@ -10,7 +10,7 @@
       <NuxtLink to="/blog"><fa :icon="['fas', 'newspaper']" /></NuxtLink>
     </li>
     <li class="prf-nav-item">
-      <NuxtLink to="/illust"><fa :icon="['fas', 'images']" /></NuxtLink>
+      <NuxtLink to="/gallery"><fa :icon="['fas', 'images']" /></NuxtLink>
     </li>
     <li class="prf-nav-item">
       <NuxtLink to="/tweet"><fa :icon="['fab', 'twitter']" /></NuxtLink>

@@ -1,6 +1,6 @@
 <template lang="pug">
 .profile
-  .profile-image: img(src="/avatar2.jpg" alt="avatar_flest")
+  .profile-image: img(src="avatar/avatar1.png" alt="avatar_flest")
   .profile-info
     .profile-text
       p.profile-text-name ふれすと

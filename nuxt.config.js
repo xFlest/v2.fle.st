@@ -18,7 +18,7 @@ export default {
   css: [
     'normalize.css',
     '~/assets/css/twemoji.css',
-    '~/static/silentbox.css'
+    '~/assets/css/silentbox.scss'
   ],
 
   plugins: [
@@ -64,7 +64,8 @@ export default {
           "faImages",
           "faEarthAmericas",
           "faAngleRight",
-          "faSackDollar"
+          "faSackDollar",
+          "faDownload"
         ],
       },
       {
