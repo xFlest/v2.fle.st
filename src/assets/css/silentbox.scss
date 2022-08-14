@@ -27,6 +27,7 @@
   }
 }
 #silentbox-overlay {
+  height: calc(var(--vh, 100vh) * .92) !important;
   &__background,
   &__content {
     width: 100vw !important;
