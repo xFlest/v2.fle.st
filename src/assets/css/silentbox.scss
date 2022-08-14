@@ -1,36 +1,3 @@
-#silentbox-overlay {
-  height: calc(var(--vh, 100vh) * .92) !important;
-  width: min(80vw, var(--vh, 100vh)) !important;
-  &__background,
-  &__content {
-    width: 100vw !important;
-    height: var(--vh, 100vh) !important;
-    top: calc(var(--vh, 100vh) * -0.04) !important;
-    left: calc((min(80vw, var(--vh, 100vh)) - 100vw) / 2) !important;
-  }
-  &__close-button {
-    width: 2.5rem !important;
-    height: 2.5rem !important;
-    right: calc((min(80vw, var(--vh, 100vh)) - 90vw) / 2) !important;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    > .icon {
-      position: static !important;
-      margin: 0 !important;
-      width: 80% !important;
-      height: 80% !important;
-    }
-  }
-  &__arrow-buttons {
-    > .arrow-previous {
-      left: calc((min(80vw, var(--vh, 100vh)) - 90vw) / 2) !important;
-    }
-    > .arrow-next {
-      right: calc((min(80vw, var(--vh, 100vh)) - 90vw) / 2) !important;
-    }
-  }
-}
 #silentbox-gallery {
   display: flex !important;
   flex-wrap: wrap-reverse;
@@ -56,6 +23,39 @@
     }
     > img {
       height: 100%;
+    }
+  }
+}
+#silentbox-overlay {
+  height: calc(var(--vh, 100vh) * .92) !important;
+  width: min(80vw, var(--vh, 100vh)) !important;
+  &__background,
+  &__content {
+    width: 100vw !important;
+    height: var(--vh, 100vh) !important;
+    top: calc(var(--vh, 100vh) * -0.04) !important;
+    left: calc(min(-20vw, var(--vh, 100vh) - 100vw) / 2) !important;
+  }
+  &__close-button {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    right: calc(min(-10vw, var(--vh, 100vh) - 90vw) / 2) !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    > .icon {
+      position: static !important;
+      margin: 0 !important;
+      width: 80% !important;
+      height: 80% !important;
+    }
+  }
+  &__arrow-buttons {
+    > .arrow-previous {
+      left: calc(min(-10vw, var(--vh, 100vh) - 90vw) / 2) !important;
+    }
+    > .arrow-next {
+      right: calc(min(-10vw, var(--vh, 100vh) - 90vw) / 2) !important;
     }
   }
 }
