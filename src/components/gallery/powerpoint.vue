@@ -58,15 +58,14 @@ export default {
     color: #fff;
     justify-content: space-around;
     align-items: center;
-    font-size: min(1.2rem, 3.6vmin);
     text-decoration: none;
     transition: background-color .2s;
     > svg {
-      font-size: 2.4em;
+      font-size: min(2.6rem, 7.8vmin);
     }
     > p {
       width: 60%;
-      font-size: 1.6em;
+      font-size: min(2rem, 6vmin);
       margin: 0;
     }
     &:hover {

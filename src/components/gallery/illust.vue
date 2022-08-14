@@ -93,6 +93,10 @@ export default {
         {
           src: '/avatar/avatar18.jpg',
           description: 'illustration by 山形',
+        },
+        {
+          src: '/avatar/avatar19.png',
+          description: 'illustration by 水瀬莉雨',
         }
       ]
     }

@@ -10,13 +10,13 @@
     overflow: hidden;
     background-color: #fff;
     max-height: 40vh;
-    text-align: center;
+    text-align: center !important;
     aspect-ratio: 1/1;
     transition: box-shadow .2s;
     &:hover {
       box-shadow: 4px 4px 12px #1116, -4px -4px 8px #fff5;
     } 
-    @for $i from 1 through 20 {
+    @for $i from 1 through 21 {
       &:nth-child(#{$i}) {
         order: -1 * $i;
       }
@@ -57,5 +57,9 @@
     > .arrow-next {
       right: min(-5vw, (100vh - 90vw) / 2) !important;
     }
+  }
+  iframe {
+    aspect-ratio: 16 / 9;
+    height: auto;
   }
 }
