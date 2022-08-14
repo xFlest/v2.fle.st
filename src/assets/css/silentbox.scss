@@ -1,31 +1,3 @@
-#silentbox-gallery {
-  display: flex !important;
-  flex-wrap: wrap-reverse;
-  flex-direction: row-reverse;
-  gap: min(1rem, 4vmin);
-  > a {
-    flex-basis: min(200px, 32vw);
-    flex-grow: 1;
-    border-radius: min(1rem, 4vmin);
-    overflow: hidden;
-    background-color: #fff;
-    max-height: 40vh;
-    text-align: center;
-    aspect-ratio: 1/1;
-    transition: box-shadow .2s;
-    &:hover {
-      box-shadow: 4px 4px 12px #1116, -4px -4px 8px #fff5;
-    } 
-    @for $i from 1 through 20 {
-      &:nth-child(#{$i}) {
-        order: -1 * $i;
-      }
-    }
-    > img {
-      height: 100%;
-    }
-  }
-}
 #silentbox-overlay {
   height: calc(var(--vh, 100vh) * .92) !important;
   width: min(80vw, var(--vh, 100vh)) !important;
@@ -56,6 +28,34 @@
     }
     > .arrow-next {
       right: calc((min(80vw, var(--vh, 100vh)) - 90vw) / 2) !important;
+    }
+  }
+}
+#silentbox-gallery {
+  display: flex !important;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  gap: min(1rem, 4vmin);
+  > a {
+    flex-basis: min(200px, 32vw);
+    flex-grow: 1;
+    border-radius: min(1rem, 4vmin);
+    overflow: hidden;
+    background-color: #fff;
+    max-height: 40vh;
+    text-align: center;
+    aspect-ratio: 1/1;
+    transition: box-shadow .2s;
+    &:hover {
+      box-shadow: 4px 4px 12px #1116, -4px -4px 8px #fff5;
+    } 
+    @for $i from 1 through 20 {
+      &:nth-child(#{$i}) {
+        order: -1 * $i;
+      }
+    }
+    > img {
+      height: 100%;
     }
   }
 }
