@@ -27,12 +27,10 @@
   }
 }
 #silentbox-overlay {
-  height: calc(var(--vh, 100vh) * .92) !important;
   &__background,
   &__content {
     width: 100vw !important;
     height: var(--vh, 100vh) !important;
-    top: calc(var(--vh, 100vh) * -0.04) !important;
   }
   &__close-button {
     width: 2.5rem !important;
