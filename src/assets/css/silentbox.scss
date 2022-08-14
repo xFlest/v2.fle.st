@@ -27,19 +27,18 @@
   }
 }
 #silentbox-overlay {
-  height: calc(var(--vh, 100vh) * 0.92) !important;
-  width: min(80vw, 100vh) !important;
+  height: calc(var(--vh, 100vh) * .92) !important;
+  width: min(80vw, var(--vh, 100vh)) !important;
   &__background,
   &__content {
     width: 100vw !important;
     height: var(--vh, 100vh) !important;
     top: calc(var(--vh, 100vh) * -0.04) !important;
-    left: min(-10vw, 100vh) !important;
+    left: min(-10vw, (var(--vh, 100vh) - 100vw) / 2) !important;
   }
   &__close-button {
     width: 2.5rem !important;
     height: 2.5rem !important;
-    right: min(-5vw, 100vh) !important;
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -52,10 +51,10 @@
   }
   &__arrow-buttons {
     > .arrow-previous {
-      left: min(-5vw, 100vh) !important;
+      left: -5vw !important;
     }
     > .arrow-next {
-      right: min(-5vw, 100vh) !important;
+      right: -5vw !important;
     }
   }
 }
