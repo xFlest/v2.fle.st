@@ -26,3 +26,25 @@
     }
   }
 }
+#silentbox-overlay {
+  height: calc(var(--vh, 100vh) * .92) !important;
+  &__background,
+  &__content {
+    width: 100vw !important;
+    height: var(--vh, 100vh) !important;
+    top: calc(var(--vh, 100vh) * -0.04) !important;
+  }
+  &__close-button {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    > .icon {
+      position: static !important;
+      margin: 0 !important;
+      width: 80% !important;
+      height: 80% !important;
+    }
+  }
+}
