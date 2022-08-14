@@ -16,7 +16,7 @@ export default {
     return {
       fukuwarai: [
         {
-          src: 'avatar/fukuwarai.jpg',
+          src: '/avatar/fukuwarai.jpg',
           description: 'illustration by 4y4san',
         }
       ]

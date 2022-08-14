@@ -19,16 +19,16 @@ export default {
     return {
       pp: [
         {
-          src: 'avatar/pptx1.jpg'
+          src: '/avatar/pptx1.jpg'
         },
         {
-          src: 'avatar/pptx2.jpg'
+          src: '/avatar/pptx2.jpg'
         },
         {
-          src: 'avatar/pptx3.jpg'
+          src: '/avatar/pptx3.jpg'
         },
         {
-          src: 'avatar/pptx4.jpg'
+          src: '/avatar/pptx4.jpg'
         },
       ]
     }
