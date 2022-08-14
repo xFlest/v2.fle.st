@@ -2,5 +2,6 @@
   "rpc.appName": "Visual Studio Code",
   "rpc.detailsDebugging": "Debugging",
   "rpc.lowerDetailsEditing": "Working",
-  "rpc.lowerDetailsViewing": "Viewing"
+  "rpc.lowerDetailsViewing": "Viewing",
+  "files.insertFinalNewline": true
 }
