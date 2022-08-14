@@ -34,11 +34,12 @@
     width: 100vw !important;
     height: var(--vh, 100vh) !important;
     top: calc(var(--vh, 100vh) * 0.04) !important;
-    left: min(10vw, (100vh - 100vw) / 2) !important;
+    left: min(-10vw, (100vh - 100vw) / 2) !important;
   }
   &__close-button {
     width: 2.5rem !important;
     height: 2.5rem !important;
+    right: min(-5vw, (100vh - 90vw) / 2) !important;
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -47,6 +48,14 @@
       margin: 0 !important;
       width: 80% !important;
       height: 80% !important;
+    }
+  }
+  &__arrow-buttons {
+    > .arrow-previous {
+      left: min(-5vw, (100vh - 90vw) / 2) !important;
+    }
+    > .arrow-next {
+      right: min(-5vw, (100vh - 90vw) / 2) !important;
     }
   }
 }
