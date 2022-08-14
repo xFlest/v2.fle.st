@@ -33,7 +33,7 @@
   &__content {
     width: 100vw !important;
     height: var(--vh, 100vh) !important;
-    top: calc(var(--vh, 100vh) * (-0.04)) !important;
+    top: calc(-1 * var(--vh, 100vh) * 0.04) !important;
     left: min(-10vw, (100vh - 100vw) / 2) !important;
   }
   &__close-button {
