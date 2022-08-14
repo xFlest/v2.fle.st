@@ -32,7 +32,6 @@
   &__content {
     width: 100vw !important;
     height: var(--vh, 100vh) !important;
-    top: calc(var(--vh, 100vh) * -0.04) !important;
   }
   &__close-button {
     width: 2.5rem !important;
@@ -45,6 +44,14 @@
       margin: 0 !important;
       width: 80% !important;
       height: 80% !important;
+    }
+  }
+  &__arrow-buttons {
+    > .arrow-previous {
+      left: min(-5vw, (var(--vh, 100vh) - 90vw) / 2) !important;
+    }
+    > .arrow-next {
+      right: min(-5vw, (var(--vh, 100vh) - 90vw) / 2) !important;
     }
   }
 }
