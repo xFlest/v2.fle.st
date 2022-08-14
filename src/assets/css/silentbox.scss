@@ -43,13 +43,11 @@
     display: flex !important;
     justify-content: center;
     align-items: center;
-  }
-  &__arrow-buttons {
-    > .arrow-previous {
-      left: min(-5vw, (var(--vh, 100vh) - 90vw) / 2) !important;
-    }
-    > .arrow-next {
-      right: min(-5vw, (var(--vh, 100vh) - 90vw) / 2) !important;
+    > .icon {
+      position: static !important;
+      margin: 0 !important;
+      width: 80% !important;
+      height: 80% !important;
     }
   }
 }
