@@ -42,6 +42,7 @@ export default {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: min(.5rem, 1vmin);
     > a {
       aspect-ratio: 16/9 !important;
       order: 0 !important;
@@ -56,17 +57,20 @@ export default {
     border: solid min(1px, .7vmin) #fff;
     display: flex;
     color: #fff;
-    justify-content: space-around;
     align-items: center;
     text-decoration: none;
     transition: background-color .2s;
     > svg {
-      font-size: min(2.6rem, 7.8vmin);
+      display: block;
+      font-size: min(2rem, 6vmin);
+      aspect-ratio: 1/1;
+      flex-grow: 0;
+      margin: 0 10%;
     }
     > p {
-      width: 60%;
-      font-size: min(2rem, 6vmin);
+      font-size: min(1.6rem, 4vmin);
       margin: 0;
+      flex-grow: 1;
     }
     &:hover {
       background-color: #fff5;

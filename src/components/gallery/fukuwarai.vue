@@ -31,7 +31,7 @@ export default {
     display: block !important;
     width: 100%;
     > a {
-      aspect-ratio: 0 !important;
+      aspect-ratio: 16 / 9 !important;
       width: 100%;
       max-height: none !important;
       > img {
