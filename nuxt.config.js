@@ -61,6 +61,7 @@ export default {
         icons: [
           "faHouse",
           "faCircleUser",
+          "faUser",
           "faAward",
           "faNewspaper",
           "faImages",

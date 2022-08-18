@@ -39,18 +39,17 @@ html {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 4rem 0;
-  gap: 1rem;
+  padding: min(4rem, 12vmin) 0;
   background-color: #fffffc;
   > main {
     width: min(100%, var(--vh,100vh));
     background-color: #f2f2efcc;
-    border-radius: 1rem;
+    border-radius: min(1rem, 3vmin);
   }
   > section {
     width: min(20vw, var(--vh,100vh) * .25);
     flex-shrink: 0;
-    border-radius: 1rem;
+    margin: 0 min(3rem, 9vmin);
   }
   @media (max-aspect-ratio: 3 / 4) {
     flex-direction: column;
