@@ -20,7 +20,8 @@ export default {
     'normalize.css',
     '~/assets/css/twemoji.css',
     '~/assets/css/silentbox.scss',
-    '~/assets/css/font.css'
+    '~/assets/css/font.css',
+    '~/assets/css/article.scss',
   ],
 
   plugins: [
@@ -41,7 +42,13 @@ export default {
     'nuxt-fontawesome'
   ],
 
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    }
+  },
 
   build: {},
 

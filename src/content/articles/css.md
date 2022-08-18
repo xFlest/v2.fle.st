@@ -1,0 +1,256 @@
+```css
+.nuxt-content {
+  font-size: min(1.2rem, 3.6vmin);
+  color: #231E06d0
+}
+
+.nuxt-content h1 {
+  font-size: 2.4em;
+  font-weight: 700
+}
+
+.nuxt-content h2 {
+  font-size: 2em;
+  font-weight: 700
+}
+
+.nuxt-content h3 {
+  font-size: 1.8em;
+  font-weight: 700
+}
+
+.nuxt-content h4 {
+  font-size: 1.4em;
+  font-weight: 700
+}
+
+.nuxt-content h5 {
+  font-size: 1.2em;
+  font-weight: 700
+}
+
+.nuxt-content hr {
+  height: 1px;
+  background-color: #b8bfbe;
+  margin: 20px 0
+}
+
+.nuxt-content em {
+  background: linear-gradient(transparent 80%, #e7ff46 80%);
+  padding: 0 5px;
+  font-style: normal
+}
+
+.nuxt-content strong {
+  background: linear-gradient(transparent 0%, #e7ff46 0%);
+  padding: 0 5px;
+  border-radius: 5px
+}
+
+.nuxt-content pre {
+  background-color: #272b2b !important
+}
+
+.nuxt-content ul,
+.nuxt-content ol {
+  padding: 0 0 .5em 1.5em
+}
+
+.nuxt-content ul>li,
+.nuxt-content ol>li {
+  position: relative;
+  list-style: none;
+  margin: 5px 0
+}
+
+.nuxt-content ul>li::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: .5em;
+  left: -1em;
+  width: 6px;
+  height: 6px;
+  background-color: #33ad9d;
+  border-radius: 100%
+}
+
+.nuxt-content ul ul li::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: .75em;
+  left: -1em;
+  width: 6px;
+  height: 2px;
+  background-color: #33ad9d
+}
+
+.nuxt-content ul ul ul li::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: .5em;
+  left: -1em;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #33ad9d;
+  border-bottom: 2px solid #33ad9d;
+  background-color: inherit;
+  border-radius: 0;
+  transform: rotate(-45deg)
+}
+
+.nuxt-content ul.arrow>li::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: .5em;
+  left: -1em;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #33ad9d;
+  border-bottom: 2px solid #33ad9d;
+  background-color: inherit;
+  border-radius: 0;
+  transform: rotate(-45deg)
+}
+
+.nuxt-content ul.check>li::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: .5em;
+  left: -1em;
+  width: 8px;
+  height: 3px;
+  border-left: 2px solid #33ad9d;
+  border-bottom: 2px solid #33ad9d;
+  background-color: inherit;
+  border-radius: 0;
+  transform: rotate(-45deg)
+}
+
+.nuxt-content ol>li {
+  counter-increment: li
+}
+
+.nuxt-content ol>li::before {
+  content: counter(li);
+  display: block;
+  position: absolute;
+  top: .3em;
+  left: -1em;
+  color: #33ad9d;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: bold
+}
+
+.nuxt-content table {
+  border-collapse: collapse;
+  border: 1px solid #b7bdbc !important;
+  line-height: 1.5;
+  margin: 10px 0;
+  width: 100%
+}
+
+.nuxt-content table th {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: top;
+  text-align: left;
+  background: #c6cbca;
+  border: 1px solid #b7bdbc !important
+}
+
+.nuxt-content table td {
+  font-size: 12px;
+  padding: 10px;
+  vertical-align: top;
+  border: 1px solid #b7bdbc !important
+}
+
+.nuxt-content table.stripe tr:nth-child(even) {
+  background: #dcdfdf
+}
+
+.nuxt-content table.dark th {
+  color: #e5e8e8;
+  background: #272b2b
+}
+
+.nuxt-content .box_gray {
+  background: #dcdfdf;
+  border: 2px solid #b8bfbe;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 1em
+}
+
+.nuxt-content .box_pink {
+  background: #e7d5d5;
+  border: 2px solid #d47e7e;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 1em
+}
+
+.nuxt-content .box_pink ul,
+.nuxt-content .box_pink ol {
+  padding: 0 0 0 1.5em
+}
+
+.nuxt-content .box_pink ol>li::before {
+  content: counter(li);
+  display: block;
+  position: absolute;
+  top: .3em;
+  left: -1em;
+  color: #d47e7e;
+  line-height: 1;
+  font-weight: bold
+}
+
+.nuxt-content .box_pink ul>li::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: .5em;
+  left: -1em;
+  width: 6px;
+  height: 6px;
+  background-color: #d47e7e;
+  border-radius: 100%
+}
+
+.nuxt-content .box_gray ul,
+.nuxt-content .box_gray ol {
+  padding: 0 0 0 1.5em
+}
+
+.nuxt-content .box_gray ol>li::before {
+  content: counter(li);
+  display: block;
+  position: absolute;
+  top: .3em;
+  left: -1em;
+  color: #b8bfbe;
+  line-height: 1;
+  font-weight: bold
+}
+
+.nuxt-content .box_gray ul>li::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: .5em;
+  left: -1em;
+  width: 6px;
+  height: 6px;
+  background-color: #b8bfbe;
+  border-radius: 100%
+}
+
+```

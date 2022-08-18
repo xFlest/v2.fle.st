@@ -45,6 +45,7 @@ html {
     width: min(100%, var(--vh,100vh));
     background-color: #f2f2efcc;
     border-radius: min(1rem, 3vmin);
+    padding: min(2rem, 6vmin);
   }
   > section {
     width: min(20vw, var(--vh,100vh) * .25);
