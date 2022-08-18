@@ -106,7 +106,7 @@ export default {
 
 <style lang="scss">
 .gallery-title {
-  margin: min(45px, 12vmin) 0;
+  margin: min(75px, 20vmin) 0 min(45px, 12vmin);
   text-align: center;
   &-text {
     display: inline-block;

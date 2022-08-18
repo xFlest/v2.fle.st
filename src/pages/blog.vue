@@ -3,9 +3,10 @@
   .card-inner
     Nav
     .card-scroller
-      NuxtLink(to="/") 😂🤣😁💕
-      p(v-emoji) 😂🤣😁💕
-      p(v-emoji) 👌
+      ul
+        li(v-for="article in articles" :key="article.slug")
+          NuxtLink(:to="'/articles/' + article.slug")
+            p {{ article.title }}
 </template>
 
 <script>
@@ -13,9 +14,15 @@ import Nav from '~/components/nav.vue';
 export default {
   name: "Blog",
   components: {
-    Nav
+    Nav,
   },
   layout: 'default',
+  async asyncData ({ $content }) {
+    const articles = await $content('articles').sortBy('createdAt', 'desc').fetch()
+    return {
+      articles
+    }
+  }
 }
 </script>
 

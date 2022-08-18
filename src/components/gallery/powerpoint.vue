@@ -38,6 +38,7 @@ export default {
 
 <style lang="scss">
 .gallery-p {
+  text-align: center;
   #silentbox-gallery {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
@@ -49,34 +50,32 @@ export default {
     }
   }
   .gallery-pptx-dl {
-    display: block;
+    display: inline-flex;
     margin-top: min(15px, 4vmin);
-    width: 100%;
-    height: min(90px, 24vmin);
-    border-radius: min(1rem, 4vmin);
-    border: solid min(1px, .7vmin) #fff;
-    display: flex;
+    padding: min(.7rem, 2vmin) min(1.2rem, 3.6vmin);
+    border-radius: 2.5em;
+    background-color: #F8D92F;
     color: #fff;
+    font-size: min(1.6rem, 4vmin);
     align-items: center;
     text-decoration: none;
     transition: background-color .2s;
     > svg {
       display: block;
-      font-size: min(2rem, 6vmin);
-      aspect-ratio: 1/1;
-      flex-grow: 0;
-      margin: 0 10%;
+      margin-right: .6em;
+      filter: drop-shadow(0 0 .05em #0008);
     }
     > p {
       font-size: min(1.6rem, 4vmin);
+      text-shadow: 0 0 .2em #0008;
       margin: 0;
       flex-grow: 1;
     }
     &:hover {
-      background-color: #fff5;
+      background-color: #FAC26D;
     }
     &:active {
-      background-color: #3339;
+      background-color: #FAE36D;
     }
   }
 }

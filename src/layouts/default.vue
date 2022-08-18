@@ -8,10 +8,7 @@ div
     Nuxt
 </template>
 
-<style lang="scss">
-html {
-  font-family: 'Zen Kaku Gothic New', sans-serif;
-}
+<style lang="scss" scoped>
 .card-container {
   display: flex;
   justify-content: center;
