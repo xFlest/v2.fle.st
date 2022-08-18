@@ -8,7 +8,7 @@ div
     Nuxt
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .card-container {
   display: flex;
   justify-content: center;
