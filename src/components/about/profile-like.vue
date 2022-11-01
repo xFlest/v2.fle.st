@@ -16,6 +16,7 @@
     li.profile-more-list-item アニメ・漫画
       ul
         li 名探偵コナン
+        li リコリス・リコイル
         li ゆるゆり #[p.profile-more-list-etc などなど...]
     li.profile-more-list-item(v-emoji) 東方Project🤏
     li.profile-more-list-item(v-emoji) 文房具🤏

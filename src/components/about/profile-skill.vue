@@ -5,10 +5,9 @@
   ul.profile-more-list
     li.profile-more-list-item HTML
     li.profile-more-list-item CSS
-    li.profile-more-list-item(v-emoji) JavaScript🤏🤏🤏
     li.profile-more-list-item(v-emoji) Sass🤏
     li.profile-more-list-item(v-emoji) Pug🤏
-    li.profile-more-list-item(v-emoji) Nuxt.js🤏
+    li.profile-more-list-item(v-emoji) Nuxt🤏
     li.profile-more-list-item Kodular
     li.profile-more-list-item MFM
 
