@@ -16,7 +16,7 @@
     &:hover {
       box-shadow: 4px 4px 12px #1116, -4px -4px 8px #fff5;
     } 
-    @for $i from 1 through 21 {
+    @for $i from 1 through 23 {
       &:nth-child(#{$i}) {
         order: -1 * $i;
       }

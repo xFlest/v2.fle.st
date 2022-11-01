@@ -97,6 +97,14 @@ export default {
         {
           src: '/avatar/avatar19.png',
           description: 'illustration by 水瀬莉雨',
+        },
+        {
+          src: '/avatar/avatar20.jpg',
+          description: 'illustration by ちるちーる3',
+        },
+        {
+          src: '/avatar/avatar21.jpg',
+          description: 'illustration by 4y4san',
         }
       ]
     }

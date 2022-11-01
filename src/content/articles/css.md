@@ -252,5 +252,4 @@
   background-color: #b8bfbe;
   border-radius: 100%
 }
-
 ```
