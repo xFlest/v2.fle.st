@@ -9,7 +9,6 @@
         ProfileLike
         ProfileSkill
       AllLink
-      LinkButton
 </template>
 
 <script>
